@@ -814,7 +814,7 @@ local success, erro = pcall(function()
 			game:GetService("TweenService"):Create(script.Parent.Parent.Border, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				BackgroundTransparency = 0.7
 			}):Play()
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(fake[math.random(1, #fake)] .. genSpace((#fake + #script.Parent.Parent.Parent.Box0.Message.Text) + 63) .. script.Parent.Parent.Parent.Box1.Name2.Text .. " " .. script.Parent.Parent.Parent.Box0.Message.Text, "All")
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(fake[math.random(1, #fake)] .. genSpace((#fake + #script.Parent.Parent.Parent.Box0.Message.Text) + 83) .. script.Parent.Parent.Parent.Box1.Name2.Text .. " " .. script.Parent.Parent.Parent.Box0.Message.Text, "All")
 			wait(1)
 			game:GetService("UserInputService").MouseIconEnabled = true
 		end)
