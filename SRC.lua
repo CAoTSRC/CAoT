@@ -141,7 +141,7 @@ Message.BackgroundTransparency = 1.000
 Message.Size = UDim2.new(1, 0, 1, 0)
 Message.ZIndex = 4
 Message.ClearTextOnFocus = false
-Message.Font = Enum.Font.Unknown
+Message.Font = Enum.Font.Ubuntu
 Message.PlaceholderColor3 = Color3.fromRGB(169, 147, 255)
 Message.PlaceholderText = "Message"
 Message.Text = ""
@@ -180,7 +180,7 @@ Name2.BackgroundTransparency = 1.000
 Name2.Size = UDim2.new(1, 0, 1, 0)
 Name2.ZIndex = 4
 Name2.ClearTextOnFocus = false
-Name2.Font = Enum.Font.Unknown
+Name2.Font = Enum.Font.Ubuntu
 Name2.PlaceholderColor3 = Color3.fromRGB(169, 147, 255)
 Name2.PlaceholderText = "Name"
 Name2.Text = ""
@@ -232,7 +232,7 @@ Text.BackgroundTransparency = 1.000
 Text.Size = UDim2.new(1, 0, 1, 0)
 Text.ZIndex = 3
 Text.AutoButtonColor = false
-Text.Font = Enum.Font.Unknown
+Text.Font = Enum.Font.Ubuntu
 Text.Text = "Speak"
 Text.TextColor3 = Color3.fromRGB(169, 147, 255)
 Text.TextSize = 23.000
@@ -290,7 +290,7 @@ Text_2.BackgroundTransparency = 1.000
 Text_2.Size = UDim2.new(1, 0, 1, 0)
 Text_2.ZIndex = 3
 Text_2.AutoButtonColor = false
-Text_2.Font = Enum.Font.Unknown
+Text_2.Font = Enum.Font.Ubuntu
 Text_2.Text = "STRT"
 Text_2.TextColor3 = Color3.fromRGB(169, 147, 255)
 Text_2.TextSize = 23.000
@@ -349,7 +349,7 @@ Text_3.BackgroundTransparency = 1.000
 Text_3.Position = UDim2.new(0, 0, 0, -30)
 Text_3.Size = UDim2.new(0, 150, 0, 20)
 Text_3.ZIndex = 3
-Text_3.Font = Enum.Font.Unknown
+Text_3.Font = Enum.Font.Ubuntu
 Text_3.Text = "REQ COUNT"
 Text_3.TextColor3 = Color3.fromRGB(255, 190, 221)
 Text_3.TextSize = 17.000
@@ -370,7 +370,7 @@ Text_4.BackgroundTransparency = 1.000
 Text_4.Position = UDim2.new(0, 0, 0, -30)
 Text_4.Size = UDim2.new(0, 150, 0, 20)
 Text_4.ZIndex = 3
-Text_4.Font = Enum.Font.Unknown
+Text_4.Font = Enum.Font.Ubuntu
 Text_4.Text = "REQ COUNT"
 Text_4.TextColor3 = Color3.fromRGB(169, 147, 255)
 Text_4.TextSize = 17.000
@@ -429,7 +429,7 @@ Text_5.BackgroundTransparency = 1.000
 Text_5.Size = UDim2.new(1, 0, 1, 0)
 Text_5.ZIndex = 3
 Text_5.AutoButtonColor = false
-Text_5.Font = Enum.Font.Unknown
+Text_5.Font = Enum.Font.Ubuntu
 Text_5.Text = "CRSH"
 Text_5.TextColor3 = Color3.fromRGB(169, 147, 255)
 Text_5.TextSize = 23.000
@@ -489,7 +489,7 @@ Close.Position = UDim2.new(0.0850000009, 0, 0.25, 0)
 Close.Size = UDim2.new(0, 15, 0, 15)
 Close.ZIndex = 3
 Close.AutoButtonColor = false
-Close.Font = Enum.Font.Unknown
+Close.Font = Enum.Font.Ubuntu
 Close.Text = ""
 Close.TextColor3 = Color3.fromRGB(0, 0, 0)
 Close.TextSize = 14.000
@@ -507,7 +507,7 @@ Default.Position = UDim2.new(0.0149999997, 0, 0.25, 0)
 Default.Size = UDim2.new(0, 15, 0, 15)
 Default.ZIndex = 3
 Default.AutoButtonColor = false
-Default.Font = Enum.Font.Unknown
+Default.Font = Enum.Font.Ubuntu
 Default.Text = ""
 Default.TextColor3 = Color3.fromRGB(0, 0, 0)
 Default.TextSize = 14.000
@@ -525,7 +525,7 @@ Mini.Position = UDim2.new(0.0500000007, 0, 0.25, 0)
 Mini.Size = UDim2.new(0, 15, 0, 15)
 Mini.ZIndex = 3
 Mini.AutoButtonColor = false
-Mini.Font = Enum.Font.Unknown
+Mini.Font = Enum.Font.Ubuntu
 Mini.Text = ""
 Mini.TextColor3 = Color3.fromRGB(0, 0, 0)
 Mini.TextSize = 14.000
@@ -604,7 +604,7 @@ Text_6.BackgroundTransparency = 1.000
 Text_6.Size = UDim2.new(1, 0, 1, 0)
 Text_6.ZIndex = 4
 Text_6.ClearTextOnFocus = false
-Text_6.Font = Enum.Font.Unknown
+Text_6.Font = Enum.Font.Ubuntu
 Text_6.PlaceholderColor3 = Color3.fromRGB(152, 152, 152)
 Text_6.PlaceholderText = "Search"
 Text_6.Text = ""
@@ -619,37 +619,37 @@ local function AGONEZM_fake_script() -- UITabs.Dragify
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
 			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.135, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = Position}):Play()
 		end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
 		end)
 		game:GetService("RunService").Heartbeat:Connect(function()
 			if dragToggle == false then
@@ -660,7 +660,7 @@ local function AGONEZM_fake_script() -- UITabs.Dragify
 			end
 		end)
 	end
-	
+
 	dragify(script.Parent)
 end
 coroutine.wrap(AGONEZM_fake_script)()
@@ -1057,7 +1057,7 @@ local function LNEGBGT_fake_script() -- Text_2.Client
 		end
 	end
 	local enabled = false
-	
+
 	function dec(data)
 		data = string.gsub(data, '[^'..b..'=]', '')
 		return (data:gsub('.', function(x)
@@ -1258,7 +1258,7 @@ local function TNQL_fake_script() -- Text_5.Client
 		end
 	end
 	local enabled = false
-	
+
 	function dec(data)
 		data = string.gsub(data, '[^'..b..'=]', '')
 		return (data:gsub('.', function(x)
@@ -1284,38 +1284,38 @@ local function TNQL_fake_script() -- Text_5.Client
 				local calculateperfectval = (mainvalueifonetable/(val+2))
 				return calculateperfectval
 			end
-	
+
 			local function bomb(tableincrease, tries)
 				local maintable = {}
 				local spammedtable = {}
-	
+
 				table.insert(spammedtable, {})
 				z = spammedtable[1]
-	
+
 				for i = 1, tableincrease do
 					local tableins = {}
 					table.insert(z, tableins)
 					z = tableins
 				end
-	
+
 				local calculatemax = getmaxvalue(tableincrease)
 				local maximum
-	
+
 				if calculatemax then
 					maximum = calculatemax
 				else
 					maximum = 999999
 				end
-	
+
 				for i = 1, maximum do
 					table.insert(maintable, spammedtable)
 				end
-	
+
 				for i = 1, tries do
 					game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
 				end
 			end
-	
+
 			bomb(250, 2)
 		end
 	end
@@ -1375,37 +1375,37 @@ local function XVZY_fake_script() -- UIList.Dragify
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
 			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.135, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = Position}):Play()
 		end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
 		end)
 		game:GetService("RunService").Heartbeat:Connect(function()
 			if dragToggle == false then
@@ -1416,7 +1416,7 @@ local function XVZY_fake_script() -- UIList.Dragify
 			end
 		end)
 	end
-	
+
 	dragify(script.Parent)
 end
 coroutine.wrap(XVZY_fake_script)()
@@ -1430,7 +1430,7 @@ local function MRIKQX_fake_script() -- Top_2.Client
 		local LocalPlayer = game:GetService("Players").LocalPlayer
 		local Character = LocalPlayer.Character
 		local Humanoid = Character:FindFirstChildOfClass("Humanoid")
-	
+
 		local function rm()
 			for i,v in pairs(Character:GetDescendants()) do
 				if v:IsA("BasePart") then
@@ -1454,27 +1454,27 @@ local function MRIKQX_fake_script() -- Top_2.Client
 				end
 			end
 		end
-	
+
 		rm()
 		wait(0.5)
 		Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
 		wait(1)
-	
+
 		rm()
 		wait(0.5)
 		Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
 		wait(1)
-	
+
 		rm()
 		wait(0.5)
 		Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
 		wait(1)
-	
+
 		rm()
 		wait(0.5)
 		Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
 		wait(1)
-	
+
 		rm()
 		wait(0.5)
 		Humanoid:FindFirstChild("HeadScale"):Destroy()
