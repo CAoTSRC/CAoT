@@ -1305,7 +1305,11 @@ local success, erro = pcall(function()
 						elseif c == 11580036017 then
 							rconsoleprint('COPIED: ' .. 'GOR')
 						elseif c == 11873670110 then
-							rconsoleprint('COPIED: ' .. 'ITN')
+							rconsoleprint('COPIED: ' .. 'ITN0')
+						elseif c == 11880692093 then
+							rconsoleprint('COPIED: ' .. 'ITN1')
+						elseif c == 11880683955 then
+							rconsoleprint('COPIED: ' .. 'ITN2')
 						end
 					elseif string.lower(script.Parent.Parent.Box.Text.Text) == "rba" then
 						local c = copy2()
