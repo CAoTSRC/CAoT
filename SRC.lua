@@ -1287,7 +1287,7 @@ local success, erro = pcall(function()
 						tall()
 					elseif string.lower(script.Parent.Parent.Box.Text.Text) == "rbd" then
 						local c = copy()
-						copytoclipboard(c)
+						setclipboard(c)
 						if c == 11789863504  then
 							rconsoleprint('COPIED: ' .. 'TIT')
 						elseif c == 11854960779 then
@@ -1309,7 +1309,7 @@ local success, erro = pcall(function()
 						end
 					elseif string.lower(script.Parent.Parent.Box.Text.Text) == "rba" then
 						local c = copy2()
-						copytoclipboard(c)
+						setclipboard(c)
 						if c == 6770303644  then
 							rconsoleprint('COPIED: ' .. 'MPH')
 						elseif c == 6970996018 then
