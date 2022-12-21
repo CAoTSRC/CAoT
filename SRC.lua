@@ -1067,7 +1067,7 @@ local success, erro = pcall(function()
 			end))
 		end
 		function crsh()
-			while wait(0.6-game:GetService("RunService").Stepped:Wait()) do
+			while wait(0.6) do
 				game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge)
 				local function getmaxvalue(val)
 					local mainvalueifonetable = 499999
@@ -1216,7 +1216,7 @@ local success, erro = pcall(function()
 	local function MRIKQX_fake_script() -- Top_2.Client 
 		local script = Instance.new('LocalScript', Top_2)
 
-		--rconsoleprint('WELCOME, PLEASE DO NOT CLOSE THIS CONSOLE')
+		rconsoleprint('WELCOME, PLEASE DO NOT CLOSE THIS CONSOLE')
 		local decals = {11789863504,11854960779,11789349008,9305376600,11361519486,11261278608,11270664671,11580036017}
 		local aud = {6770303644,6970996018}
 		function tall()
